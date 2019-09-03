@@ -4,18 +4,20 @@ import { FaChevronDown, FaInbox, FaRegCalendarAlt, FaRegCalendar } from "react-i
 export const Sidebar = () => (
 	<div className="sidebar" data-testid="sidebar">
 		<ul className="sidebar__generic">
-			<li>
+			<li data-testid="inbox" className="inbox">
 				<span>
 					<FaInbox />
 				</span>
 				<span>Inbox</span>
 			</li>
-			<li><span>
+			<li data-testid="today" className="today">
+				<span>
 					<FaRegCalendar />
 				</span>
 				<span>Today</span>
 			</li>
-			<li><span>
+			<li data-testid="next_7" className="next_7">
+				<span>
 					<FaRegCalendarAlt />
 				</span>
 				<span>Next 7 days</span>
